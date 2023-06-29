@@ -1,0 +1,81 @@
+.middle-orbit {
+  width: 686px;
+  height: 686px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 8;
+}
+.middle-rotation-container {
+    position: relative;
+    width: 686px;
+    height: 686px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+  }
+  .rotate-middle-img-xbox {
+    display: block;
+    position: absolute;
+    z-index: 40;
+    top: 320px;
+    left: 325px;
+    animation: 140s linear 0s infinite normal none running animationMiddleImgXbox;
+    cursor: pointer;
+    animation-play-state: running;
+  }
+  .rotate-middle-img-batman {
+    display: block;
+    position: absolute;
+    z-index: 40;
+    top: 322px;
+    left: 322px;
+    animation: 140s linear 0s infinite normal none running animationMiddleImgBatman;
+    cursor: pointer;
+    animation-play-state: running;
+  }
+  .middle-img-xbox {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+    background-image: url(../assets/xbox.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .middle-img-batman {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+    background-image: url(../assets/batman.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #FBFF35;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  @keyframes animationMiddleImgXbox {
+    0% {
+        transform: rotate(100deg) translateX(343px) rotate(-100deg);
+    }
+
+    100% {
+        transform: rotate(-260deg) translateX(343px) rotate(260deg);
+    }
+  }
+  @keyframes animationMiddleImgBatman {
+    0% {
+        transform: rotate(220deg) translateX(343px) rotate(-220deg);
+    }
+
+    100% {
+        transform: rotate(-140deg) translateX(343px) rotate(140deg);
+    }
+  }

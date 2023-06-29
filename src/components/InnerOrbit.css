@@ -1,0 +1,51 @@
+.inner-orbit {
+  width: 464px;
+  height: 464px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+}
+.inner-rotation-container {
+  position: relative;
+  width: 464px;
+  height: 464px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.rotate-inner-img-gta {
+  display: block;
+  position: absolute;
+  z-index: 40;
+  top: 215px;
+  left: 215px;
+  animation: 90s linear 0s infinite normal none running animationInnerImgGta;
+  animation-play-state: running;
+  border-radius: 8px;
+  border: 1px solid #404040;
+  background: #2f2f2f;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.inner-img-gta {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0px;
+  position: relative;
+  display: inline-block;
+  background-image: url(../assets/gta.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+@keyframes animationInnerImgGta {
+  0% {
+    transform: rotate(0deg) translateX(250px) rotate(-0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg) translateX(250px) rotate(360deg);
+  }
+}

@@ -1,0 +1,111 @@
+.outer-orbit {
+    width: 944px;
+    height: 944px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 6;
+  }
+  .outer-rotation-container {
+      position: relative;
+      width: 944px;
+      height: 944px;
+      border-radius: 50%;
+      border: 1px dashed rgba(255, 255, 255, 0.1);
+    }
+    .rotate-outer-img-minecraft {
+      display: block;
+      position: absolute;
+      z-index: 40;
+      top: 455px;
+      left: 445px;
+      animation: 190s linear 0s infinite normal none running animationOuterImgMinecraft;
+      cursor: pointer;
+      animation-play-state: running;
+    }
+    .rotate-outer-img-mortalkombat {
+      display: block;
+      position: absolute;
+      z-index: 40;
+      top: 455px;
+    left: 445px;
+      animation: 190s linear 0s infinite normal none running animationOuterImgMortalkombat;
+      cursor: pointer;
+      animation-play-state: running;
+    }
+    .rotate-outer-img-fifa {
+      display: block;
+      position: absolute;
+      z-index: 40;
+      top: 440px;
+      left: 445px;
+      animation: 190s linear 0s infinite normal none running animationOuterImgFifa;
+      cursor: pointer;
+      animation-play-state: running;
+    }
+    .outer-img-minecraft {
+      height: 40px;
+      width: 40px;
+      vertical-align: outer;
+      margin: 0px;
+      position: relative;
+      display: inline-block;
+      background-image: url(../assets/minecraft.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    cursor: pointer;
+    }
+    .outer-img-mortalkombat {
+      height: 40px;
+      width: 40px;
+      vertical-align: outer;
+      margin: 0px;
+      position: relative;
+      display: inline-block;
+      background-image: url(../assets/mortalkombat.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    cursor: pointer;
+    }
+    .outer-img-fifa {
+      height: 40px;
+      width: 40px;
+      vertical-align: outer;
+      margin: 0px;
+      position: relative;
+      display: inline-block;
+      background-image: url(../assets/fifa.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    cursor: pointer;
+    }
+  
+    @keyframes animationOuterImgMinecraft {
+      0% {
+          transform: rotate(0deg) translateX(472px) rotate(0deg);
+      }
+  
+      100% {
+          transform: rotate(-360deg) translateX(472px) rotate(360deg);
+      }
+    }
+    @keyframes animationOuterImgMortalkombat {
+      0% {
+          transform: rotate(120deg) translateX(472px) rotate(-120deg);
+      }
+  
+      100% {
+          transform: rotate(-240deg) translateX(472px) rotate(240deg);
+      }
+    }
+    @keyframes animationOuterImgFifa {
+      0% {
+          transform: rotate(240deg) translateX(472px) rotate(-240deg);
+      }
+  
+      100% {
+          transform: rotate(-120deg) translateX(472px) rotate(120deg);
+      }
+    }
